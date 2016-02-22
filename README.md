@@ -12,7 +12,7 @@ Möchte man diese mit pip installieren, kann die klassische requirements.txt
 verwendet werden.
 
 Nutzer von [Anaconda](https://anaconda.org) können mit Hilfe der beiliegenden
-conda-env.yml eine eigenständige Umgebung aufsetzen, die alle nötigen Pakete
+environment.yml eine eigenständige Umgebung aufsetzen, die alle nötigen Pakete
 beinhaltet. Hierzu reicht es im Hauptverzeichnis folgendes Kommando auszuführen:
 
 `conda env create`
