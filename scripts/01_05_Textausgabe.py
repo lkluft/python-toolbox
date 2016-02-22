@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-"""
+"""Ausgabe von Text auf die Standardausgabe.
+
 Ein wichtiger Bestandteil von Programmierung ist die Ausgabe von Text auf das
-Terminal. Es ermöglicht ein visülles Feedback an welcher Stelle der
-Codeausführung das Skript momentan steht. Auch Ergebnisse können direkt auf das
-Terminal ausgegeben werden.
+Terminal. Es ermöglicht ein visuelles Feedback des Programmablaues. Auch
+Ergebnisse können direkt auf das Terminal ausgegeben werden.
 
 """
 
-# Python bietet hierzu die print() Funktion an. Dies kann direkt mit
-# Strings aufgerufen werden
-print('Diese Zeile wird auf dem Terminal ausgegeben.')
+# Mit Hilfe der print()-Funktion können Strings und Variablen direkt ausgegeben
+# werden.
+print('Diese Zeile wird im Terminal ausgegeben.')
 
 # ... oder mit Variablen
 var = 'Diese Variable wird gleich ausgegeben.'
