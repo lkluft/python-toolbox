@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+\usepackage[top=2cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc} % Direkte Eingabe von Umlauten
+\renewcommand{\familydefault}{\sfdefault} % Serifenlose Schrift
+\setlength{\parindent}{0pt} % Keine Einrückung am Beginn von Absätzen
+\renewcommand{\arraystretch}{1.5} % Zeilenabstand in Tabellen
+% Verlinkung von Inhaltsverzeichnis, Bildern und Formeln
+% Angabe von URLs und Verlinkung von Referenzen
+\usepackage[pagebackref]{hyperref}
+% Definition von Linkfarben
+\usepackage{color}
+\usepackage{framed}
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
+% Titel
+\title{IPython - How To}
+\author{}
+\date{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{section}{0}
+\begin{document}
+\maketitle
+\section*{Einleitung} Python ist eine offene Software und ihr Einsatz daher sehr flexibel. Im Rahmen des Instrumentenpraktikums wird die Nutzung des IPython Paketes empfohlen. Es bietet allerhand Funktionen, die den interaktiven Umgang mit Python erleichtern.
+
+\section*{Die richtige Python-Version} Der Werkzeugkasten wurde für die Python-Version 2.7 geschrieben. Um die aktuellste 2.7 Version nutzen zu können, muss man sich auf dem Server snow anmelden. Dies kann im Terminal via SSH (\textit{secure shell}) Verbindung erfolgen. Hierzu wird einfach der folgende Befehl im Terminal eingegeben und ausgeführt.
+\begin{shaded}
+\verb+$ ssh -X snow+
+\end{shaded}
+
+Wenn man sich erfolgreich auf der snow eingeloggt hat, kann mit Hilfe des Modul-Systems die aktuelle Version von Python-2.7 geladen werden (Python 2.7 Version 3).
+\begin{shaded}
+\verb+$ module load python/2.7-ve3+
+\end{shaded}
+
+Das Modul muss in jeder Session erneut geladen werden. Um dies nicht immer manuell erledigen zu müssen, kann der Befehl der Konfigurationsdatei der jeweiligen Shell im Home-Verzeichnis hinzugefügt werden (z.B. \verb+.cshrc+, \verb+.bashrc+, ...).
+
+\section*{Setzen eines Passwortes} Bei der Verwendung des IPython Notebooks wird eine voll umfängliche Python-Shell auf dem Server offen zugänglich gemacht. Dies ermöglicht einen Zugriff mit vollen Rechten auf das System des Nutzers, der das Notebook gestartet hat. Um Missbrauch zu verhindern, sollte unbedingt ein Passwort gesetzt werden!\\
+Zu diesem Zweck liegt dem Python-Werkzeugkasten das Skript \verb+ipython_notebook_server_config.py+ bei, welches dies automatisch erledigt. Nach Ausführung des Skriptes kann man sein Passwort setzen. Zusätzlich wird Firefox als Standardbrowser gesetzt. Möchte man sein Passwort ändern, kann man das Skript erneut ausführen; ein bereits gesetztes Passwort wird in diesem Fall überschrieben.
+\begin{shaded}
+\verb+$ python ipython_notebook_server_config.py+
+\end{shaded}
+
+\section*{Nutzung von IPython} IPython bietet eine erweiterte Kommandozeilenumgebung der klassischen Python-Shell an. Diese wird mit dem Befehl \verb+ipython+ gestartet. Um eine aktive Sitzung zu beenden, wird der Befehl \verb+exit+ aufgerufen.
+\begin{shaded}
+\verb+$ ipython+
+\end{shaded}
+
+Zur Nutzung des IPython Notebooks wird das Keyword \verb+notebook+ angehängt.
+\begin{shaded}
+\verb+$ ipython notebook+
+\end{shaded}
+Der Befehl startet eine neue Python-Session und ein IPython Notebook auf einem freien Netzwerk-Port (standardmäßig \verb+localhost:8888+). Im Anschluss wird dieser Port automatisch im Web-Browser angesteuert. Sollte der Standardport belegt sein (was während des Praktikums häufig passieren wird) wählt IPython automatisch einen anderen Port. Um ein Notebook zu schließen und den zugehörigen Python-Kernel zu beenden, wird die Tastenkombination \verb-Strg+C- genutzt.\\
+
+Es ist außerdem möglich, eine bestehende IPython-Notebook-Session in der Konsole anzuwählen. Auf diese Weise kann parallel im Notebook und im Terminal gearbeitet werden.
+\begin{shaded}
+\verb+$ ipython console --existing+
+\end{shaded}
+
+
+\end{document}
