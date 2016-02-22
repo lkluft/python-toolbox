@@ -1,40 +1,55 @@
-# python-toolbox
+#thon-toolbox
 Eine Sammlung von Skripten, die zur Einführung in die Datenverarbeitung mit Python dienen soll.
 
-## Inhaltsverzeichnis
+#Installation
+Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket sondern
+lediglich um eine Sammlung von Skripten. Aus diesem Grund muss die Toolbox nicht
+im klassischesn Sinne installiert werden. Es genügt das Github repository zu
+klonen. Um alle Skripte korrekt ausführen zu können, sind jedoch einige wenige
+Abhängigkeiten zu erfüllen.
+Möchte man diese mit pip installieren, kann die klassische requirements.txt
+verwendet werden.
+Nutzer von [Anaconda](https://anaconda.org) können mit Hilfe der beiliegenden
+conda-env.yml eine eigenständige Umgebung aufsetzen, die alle nötigen Pakete
+beinhaltet. Hierzu reicht es im obersten Hauptverzeichnis des repositorys
+folgendes Kommando auszuführen:
+  `conda env create`
+
+
+#Inhaltsverzeichnis
 0. Einführung
-  * Aufbau_eines_Python_Skriptes.py
+  * Aufbau eines Python Skriptes
 
 1. Basics
-  * Grundrechenarten.py
-  * Vektorrechnung.py
-  * Matrizenrechnung.py
-  * Strings.py
-  * Textausgabe.py
-  * if_Abfrage.py
-  * for_Schleife.py
-  * UNIX_Shell_in_Python.py
+  * Grundrechenarten
+  * Vektorrechnung
+  * Matrizenrechnung
+  * Strings
+  * Textausgabe
+  * if Abfrage
+  * for Schleife
+  * UNIX Shell in Python
 
 2. Plotten
-  * Beispiel_Plots.py
-  * Beispiel_Subplot.py
-  * Plotten_mehrerer_Linien.py
-  * Plotten_mit_logaarithmischer_Achse.py
-  * Plot_mit_Zeitachse.py
-  * Achseneinstellungen.py
-  * Speichern_von_Abbildungen.py
+  * Beispiel Plots
+  * Beispiel Subplot
+  * Plotten mehrerer Linien
+  * Plotten mit logarithmischer Achse
+  * Plot mit Zeitachse
+  * Achseneinstellungen
+  * Speichern von Abbildungen
 
 3. Input & Output
-  * Einlesen_einer_ASCII_Datei.py
-  * Einlesen_mehrerer_Dateien.py
-  * Speichern_von_Zahlenwerten_in_ASCII_Files.py
-  * Speichern_komplexer_Daten_in_ASCII_Files.py
+  * Einlesen einer ASCII Datei
+  * Einlesen mehrerer Dateien
+  * Speichern von Zahlenwerten in ASCII Files
+  * Speichern komplexer Daten in ASCII Files
 
 4. Datenverarbeitung
-  * Lineares_Fitten.py
-  * Exponential_Fit.py
-  * Fehlwerte.py
-  * Histogramme.py
-  * Werte_finden.py
-  * Autokorrelation.py
-  * Fouriertransformation.py
+  * Lineares Fitten
+  * Exponential Fit
+  * Fehlwerte
+  * Histogramme
+  * Werte finden
+  * Autokorrelation
+  * Fouriertransformation
