@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 """Anwenden der FFT auf einen Datensatz.
+
+Bei der Untersuchung von Zeitreihen kann mit Hilfe einer Fouriertransformation
+bestimmt werden, ob dem Datensatz eine Periodiztät zugrunde liegt.
+Zur Veranschaulichung wird eine Datenreihe mit Frequenzen bei 5 und 25 Hz
+erzeugt und verrauscht.
+
 """
 
 import matplotlib.pyplot as plt
@@ -14,7 +20,7 @@ Ts = 1.0/Fs # Abtastintervall
 t = np.arange(0, 1, Ts)
 y = (np.sin(2 * np.pi * 5 * t)
      + 0.6 * np.sin(2 * np.pi * 25 * t)
-     + 0.1 * np.random.normal(size=t.size))
+     + 0.7 * np.random.normal(size=t.size))
 
 # Plot der Zeitreihe und Beschriftung der Achsen
 fig, axes = plt.subplots(2,1)
@@ -39,4 +45,4 @@ axes[1].plot(freq, abs(Y), 'r')
 axes[1].set_xlabel('Frequenz (Hz)')
 axes[1].set_ylabel('Amplitude')
 
-plt.show()
+plt.show() # Anzeigen des Plots
