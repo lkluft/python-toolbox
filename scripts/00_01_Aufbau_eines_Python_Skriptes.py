@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Aufbaue eines Pythonskriptes.
+"""Aufbau eines Pythonskriptes.
 
 In der ersten Zeile wird das Encoding des Files angegeben.  UTF-8 ermöglicht
 die Nutzung von Umlauten.
@@ -31,7 +31,10 @@ import scipy as sp
 
 # Um Details über die verschiedenen Module zu erhalten, kann die interne
 # help-Funktion von Python genutzt werden. Mit Hilf von help(modul) gelangt man
-# zu einer Übersichtsseite von modul.
+# zu einer Übersichtsseite von modul:
+# >>> import os
+# >>> help(os)
 
 # Sollte beim Ausführen dieses Skriptes ein Fehler auftreten, sind einige Module
-# nicht installiert, oder die Pythonversion wurde nicht richtig geladen.
+# nicht installiert, oder es wird eine falsche Python-Version verwendet. In
+# diesem Fall sei auf den Unterpunkt Installation in der README.md verwiesen.
