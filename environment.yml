@@ -1,0 +1,10 @@
+name: python-toolbox
+dependencies:
+- python=2.7
+- ipython
+- matplotlib
+- numpy
+- scipy
+- pip
+- pip:
+    - typhon
