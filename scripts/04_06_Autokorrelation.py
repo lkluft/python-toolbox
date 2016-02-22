@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Erstellen eines Cosinus mit Rauschen
-x = np.linspace(0, 50, 500)
+x = np.linspace(0, 25, 200)
 y = 2 * np.cos(2 * x) + 1 * np.random.normal(size=x.size)
 
 # Die Autkorrelation wird mit Hilfe der Funktion correlate() gebildet. Das
 # Ergebnis wird direkt skaliert.
-ac = np.correlate(y, y, mode='full')/np.sum(y**2)
+ac = np.correlate(y, y, mode='full') / np.sum(y**2)
 
 # Durch den Parameter mode='full' wird die Korrelationsfunktion
 # beidseitig bestimmt. Im folgenden Schritt wird die erste
@@ -24,4 +24,4 @@ fig, ax = plt.subplots()
 ax.plot(x, y, 'r', x, ac, 'b')
 ax.legend(['Messreihe','Autokorrelation'])
 
-plt.show()
+plt.show() # Anzeigen des Plots
