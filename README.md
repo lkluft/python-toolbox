@@ -11,7 +11,7 @@ Abhängigkeiten zu erfüllen.
 Möchte man diese mit pip installieren, kann die klassische requirements.txt
 verwendet werden.
 
-Nutzer von [Anaconda](https://anaconda.org) können mit Hilfe der beiliegenden
+Nutzer von [Anaconda](https://www.continuum.io/downloads) können mit Hilfe der beiliegenden
 environment.yml eine eigenständige Umgebung aufsetzen, die alle nötigen Pakete
 beinhaltet. Hierzu reicht es im Hauptverzeichnis folgendes Kommando auszuführen:
 
