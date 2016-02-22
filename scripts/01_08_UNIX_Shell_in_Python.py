@@ -9,5 +9,6 @@ bei der Vor- und Nachverarbeitung von Daten hilfreich sein.
 import subprocess
 
 
-# Mit Hilfe der 'who' Funktion anzeigen lassen, wer noch eingeloggt ist.
+# Mit Hilfe des Shell-Kommandos 'who' anzeigen lassen, wer noch auf dem System
+# eingeloggt ist.
 subprocess.call(['who'])
