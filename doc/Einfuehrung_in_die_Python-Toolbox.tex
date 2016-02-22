@@ -1,87 +1,94 @@
-\documentclass[a4paper]{article}
-\usepackage[top=2cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
-\usepackage[german]{babel}
-\usepackage[utf8]{inputenc} % Direkte Eingabe von Umlauten
-\renewcommand{\familydefault}{\sfdefault} % Serifenlose Schrift
-\setlength{\parindent}{0pt} % Keine Einrückung am Beginn von Absätzen
-\renewcommand{\arraystretch}{1.5} % Zeilenabstand in Tabellen
-% Einstellungen Literaturverzeichnis (BibTex)
-\usepackage{natbib}
-\bibliographystyle{apalike}
-% Verlinkung von Inhaltsverzeichnis, Bildern und Formeln
-% Angabe von URLs und Verlinkung von Referenzen
-\usepackage[pagebackref]{hyperref}
-% Definition von Linkfarben
-\usepackage{color}
+\documentclass[a4paper,fleqn]{article}
+%% Seitenaufbau
+\usepackage[top=3cm, bottom=2.5cm, left=3.5cm, right=3.5cm]{geometry}
+
+%% Schriftbild
+\usepackage{lmodern}  % Latin Modern Zeichensatz
+\usepackage[utf8]{inputenc}  % Unterstuetzung von Umlauten im Quelltext
+\usepackage[T1]{fontenc}  % Korrekte Umlaute im Output
+\usepackage[ngerman]{babel}  % Silbentrennung nach neuer Rechtschreibung
+\renewcommand{\familydefault}{\sfdefault}  % Serifenlose Schrift
+\usepackage{setspace}\onehalfspacing  % 1.5-facher Zeilenabstand
+\renewcommand{\arraystretch}{1.5}  % 1.5-facher Zeilenabstand (Tabellen)
+\setlength{\parindent}{0pt}  % Keine Einrueckung am Beginng von Absaetzen
+\sloppy  % Weniger strikte Silbentrennung
+
+%% Verlinkung von Inhaltsverzeichnis, Bildern und Formeln
+\usepackage[pagebackref]{hyperref}  % Verlinkung von URLs und Referenzen
+\usepackage{color}  % Definition von Linkfarben
 \definecolor{DarkRed}{rgb}{0.5,0,0}
 \hypersetup{
   colorlinks,
   citecolor=DarkRed,
-  linkcolor=black,
+  linkcolor=DarkRed,
   urlcolor=blue}
-% �berschrift in Kopfzeile
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0.5pt}
-\lhead{\nouppercase{\rightmark}}\rhead{}
-\renewcommand{\sectionmark}[1]{\markright{\ #1}}
-\cfoot{\thepage} % Richtig Font für Seitenzahl
-% Erweiterte Listenumgebung
-\usepackage{enumerate}
-% Grafikumgebungen
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage{subcaption}
-\usepackage{floatflt}
-\usepackage{float}
-% Farbige Umrahmung f�r Texte
-\usepackage{framed}
-\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
-\newcommand{\farbbox}[1]{\begin{shaded} #1 \end{shaded}}
-% Mathematikumgebung
-\usepackage{mathtools}
-\usepackage{amssymb}
-\usepackage{sfmath}
-\usepackage[makeroom]{cancel} % Paket zum Streichen von Termen
-\renewcommand{\deg}{\ensuremath{^{\circ}}}
-\renewcommand{\epsilon}{\varepsilon}
-% Formeln und Bilder pro Section nummerieren
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-% Titel
-\title{Einführung in die Python-Toolbox}
+
+%% Inhalt der Titelseite
+\title{Einführung in die Python Toolbox}
 \author{}
-\date{}
+\date{\today}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{section}{0}
 \begin{document}
 \maketitle
 
 \section*{Konzept}
-Der Werkzeugkasten soll zur Erleichterung der Auswertung der Versuche innerhalb des meteorologischen Instrumentenpraktikums dienen. Dabei ist das Ziel nicht die Bereitstellung von fertigen Skripten zur Auswertung einzelner Versuche, sondern die eine Hilfestellung durch kleine Hilfsskripte, die zur Veranschaulichung von grundlegenden Arbeitsschritten in Python dienen sollen.\\[2mm]Zu diesem Zweck steht eine Vielzahl von Pythonskripten zur Verfügung, die in kurzen Anwendungsbeispielen wichtige Funktionen und Auswertungskonzepte vorstellen sollen. Hierbei steht die Anschaulichkeit im Vordergrund, weshalb jedes Skript ausführbar ist, um das Verständnis des Quellcodes durch ein sichtbares Ergebnis zu unterstützen.\\[2mm]
-Die angedachte Nutzung des Werkzeugkastens zur Lösung einer Aufgabenstellung soll nun an einem kurzen Beispiel erläutert werden.
+Der Werkzeugkasten soll zur Erleichterung der Auswertung der Versuche innerhalb
+des meteorologischen Instrumentenpraktikums dienen. Dabei ist das Ziel nicht die
+Bereitstellung von fertigen Skripten zur Auswertung einzelner Versuche, sondern
+die eine Hilfestellung durch kleine Hilfsskripte, die zur Veranschaulichung von
+grundlegenden Arbeitsschritten in Python dienen sollen.\\
+
+Zu diesem Zweck steht eine Vielzahl von Pythonskripten zur Verfügung, die in
+kurzen Anwendungsbeispielen wichtige Funktionen und Auswertungskonzepte
+vorstellen sollen. Hierbei steht die Anschaulichkeit im Vordergrund, weshalb
+jedes Skript ausführbar ist, um das Verständnis des Quellcodes durch ein
+sichtbares Ergebnis zu unterstützen.\\
+
+Die angedachte Nutzung des Werkzeugkastens zur Lösung einer Aufgabenstellung
+soll nun an einem kurzen Beispiel erläutert werden.
 
 \subsection*{Anwendungsbeispiel}
 Gegeben sei folgende Aufgabenstellung:
+
 \begin{quote}
-''Die Daten der Temperaturanpassung eines Thermometers an seine Umgebung liegen in einer ASCII-Datei vor. Lesen Sie die Daten ein und bestimmen sie die Zeitkonstante des Thermometers, indem Sie eine Exponentialfunktion an den Verlauf der Messdaten anpassen. Plotten Sie sowohl die Messsdaten als auch die gefittete Exponentialfunktion.''
+''Die Daten der Temperaturanpassung eines Thermometers an seine Umgebung liegen
+in einer ASCII-Datei vor. Lesen Sie die Daten ein und bestimmen sie die
+Zeitkonstante des Thermometers, indem Sie eine Exponentialfunktion an den
+Verlauf der Messdaten anpassen. Plotten Sie sowohl die Messsdaten als auch die
+gefittete Exponentialfunktion.''
 \end{quote}
-Der erste Schritt bei der Lösung einer solchen Aufgabenstellung ist das Aufstellen einer strukturierten Liste von Arbeitsschritten. So lässt sich die oben stehende Aufgabe aufteilen in
+
+Der erste Schritt bei der Lösung einer solchen Aufgabenstellung ist das
+Aufstellen einer strukturierten Liste von Arbeitsschritten. So lässt sich die
+oben stehende Aufgabe aufteilen in
+
 \begin{enumerate}
-\item Das Einlesen der Messdaten.
-\item Das Anpassen einer Exponentialfunktion an die Messdaten.
-\item Das Berechnen der Zeitkonstante aus den Parametern der Exponentialfunktion.
-\item Das Plotten der Messdaten und der Exponentialfunktion.
-\item Das Speichern des Plots als Bilddatei zur Einbindung in die Lösungsdatei.
+  \item Das Einlesen der Messdaten.
+  \item Das Anpassen einer Exponentialfunktion an die Messdaten.
+  \item Das Berechnen der Zeitkonstante aus den Parametern der Exponentialfunktion.
+  \item Das Plotten der Messdaten und der Exponentialfunktion.
+  \item Das Speichern des Plots als Bilddatei zur Einbindung in die Lösungsdatei.
 \end{enumerate}
 
-Sollten bei der Bearbeitung dieser Teilschritte Probleme auftreten, kann in der Toolbox nach Anwendungsbeispielen zur Lösung gesucht werden. Für die fünf Arbeitsschritte aus der Beispielaufgabe finden sich z.B. folgende Skripte als Hilfestellung:
+Sollten bei der Bearbeitung dieser Teilschritte Probleme auftreten, kann in der
+Toolbox nach Anwendungsbeispielen zur Lösung gesucht werden. Für die fünf
+Arbeitsschritte aus der Beispielaufgabe finden sich z.B. folgende Skripte als
+Hilfestellung:
+
 \begin{itemize}
-\item \verb+Einlesen_einer_ASCII_Datei_Grundlagen.py+
-\item \verb+Exponential_fit.py+
-\item \verb+Plotten_mehrerer_Linien.py+
-\item \verb+Speichern_von_Abbildungen.py+
+  \item \verb+Einlesen_einer_ASCII_Datei_Grundlagen.py+
+  \item \verb+Exponential_fit.py+
+  \item \verb+Plotten_mehrerer_Linien.py+
+  \item \verb+Speichern_von_Abbildungen.py+
 \end{itemize}
-Mit Hilfe der Beispielskripte kann nun ein eigenes Pythonskript geschrieben werden, in dem die einzelnen Teilaufgaben nacheinander abgearbeitet werden.\\[2mm]
-Bei Problemen, die auch unter Verwendung der Toolbox nicht zu lösen sind, lohnt häufig ein Blick ins Internet. Man das Rad nicht immer neu erfinden. Des Weiteren ist gegenseitige Hilfestellungen unter den Teilnehmern ein efffektives Mittel gegen Frust bei der Datenauswertung!
+
+Mit Hilfe der Beispielskripte kann nun ein eigenes Pythonskript geschrieben
+werden, in dem die einzelnen Teilaufgaben nacheinander abgearbeitet
+werden.\\
+
+Bei Problemen, die auch unter Verwendung der Toolbox nicht zu lösen sind, lohnt
+häufig ein Blick ins Internet. Man das Rad nicht immer neu erfinden. Des
+Weiteren ist gegenseitige Hilfestellungen unter den Teilnehmern ein efffektives
+Mittel gegen Frust bei der Datenauswertung!
 \end{document}
