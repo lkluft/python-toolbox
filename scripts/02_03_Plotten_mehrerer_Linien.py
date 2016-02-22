@@ -6,21 +6,20 @@ nützlich für das Vergleichen von Funktionen oder Messreihen.
 
 """
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 # Erstellen der nötigen x, y und z Vektoren
 x = np.linspace(-5, 5, 100)
-y = 0.5 * x
-z = x - 1
+y1 = 0.5 * x
+y2 = x - 1
 
 # Wird keine neue figure geöffnet, werden alle weiteren Plotbefehle automatisch
-# in der alten ausgeführt. Die Farbe wird dabei automatisch geändert, kann aber
-# auch von Hand gesetzt werden (s. Beispiel_Plot.py)
+# in der aktuellen ausgeführt. Die Linienfarbe wird dabei automatisch geändert,
+# kann aber auch von Hand gesetzt werden (s. 02_01_Beispiel_Plot.py)
 fig, ax = plt.subplots()
-ax.plot(x, y)
-ax.plot(x, z)
+ax.plot(x, y1)
+ax.plot(x, y2)
 
-# Anzeigen des Plots
-plt.show()
+plt.show() # Anzeigen des Plots
