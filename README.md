@@ -1,4 +1,4 @@
-#thon-toolbox
+#Python Toolbox
 Eine Sammlung von Skripten, die zur Einführung in die Datenverarbeitung mit Python dienen soll.
 
 #Installation
@@ -13,8 +13,7 @@ verwendet werden.
 
 Nutzer von [Anaconda](https://anaconda.org) können mit Hilfe der beiliegenden
 conda-env.yml eine eigenständige Umgebung aufsetzen, die alle nötigen Pakete
-beinhaltet. Hierzu reicht es im obersten Hauptverzeichnis des repositorys
-folgendes Kommando auszuführen:
+beinhaltet. Hierzu reicht es im Hauptverzeichnis folgendes Kommando auszuführen:
 
 `conda env create`
 
