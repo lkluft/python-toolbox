@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-"""
-Arrays sind ein wichtiges Konstrukt. In ihnen lassen sich z.B. Zeitreihen
-speichern. Arrays können sowohl direkt per Hand als auch indirekt durch
-Funktionen erzeugt werden.  Es empfiehlt sich immer den Typ der gespeicherten
-Werte anzugeben ('long','float',...).
+"""Einführung in Rechnugen mit numpy.ndarrays.
+
+Arrays sind ein wichtiges Konstrukt zum Speichern zusammengehöriger Daten.
+Arrays können sowohl direkt per Hand als auch indirekt durch Funktionen erzeugt
+werden.  Es empfiehlt sich immer den Typ der gespeicherten Werte anzugeben
+('long','float',...).
 
 """
 
@@ -21,11 +22,10 @@ v2 = np.linspace(10, 30, 3)
 # Ausgabe der beiden Arrays
 print(v1, v2)
 
-
-## Vektoroperationen
+# Vektoroperationen
 print(v1 + 1) # Erhöhen aller Werte um 1
 print(v2 * 2) # Multiplizieren aller Werte mit 2
-print(v1 + v2) # Summe zweier Vektoren
-print(v1 * v2) # Elementweise Multiplikation
+print(v1 + v2) # Elementweise Summe zweier Vektoren
+print(v1 * v2) # Elementweise Multiplikation zweier Vektoren
 print(np.dot(v1, v2)) # Vektorprodukt
 print(np.cross(v1, v2)) # Kreuzprodukt
