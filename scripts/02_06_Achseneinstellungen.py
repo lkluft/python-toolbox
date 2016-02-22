@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
-"""
+"""Manipulation des Achsenbeschriftung und -einteilung.
+
 Python bietet viele Möglichkeiten die Darstellung von Grafiken (figures) zu
-editieren.
+editieren. In diesem Skript sollen einige davon dargestellt werden. Hierbei
+besteht in keinster Weise Anspruch auf Vollständigkeit.
+
 """
 
 import matplotlib as mpl
@@ -9,10 +12,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+x = np.linspace(-10, 10, 100)
+
 # Erstellen eines Standardplots
 fig, ax = plt.subplots(figsize=(10, 6))
-x = np.linspace(-10, 10, 100)
-plt.plot(x, x**2)
+ax.plot(x, x**2)
 
 ## Eigenschaften der Achsen editieren
 # Wertebereich der Achsen
