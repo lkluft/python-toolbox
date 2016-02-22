@@ -5,6 +5,3 @@ dependencies:
 - matplotlib
 - numpy
 - scipy
-- pip
-- pip:
-    - typhon
