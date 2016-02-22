@@ -2,7 +2,7 @@
 """Erstellen einfacher Plots mit matplotlib.
 
 Das grafische Darstellen von Daten ist einer der wichtigsten Aufgabenbereiche
-der Datenverarbeitung. Wir verwenden zu diesme Zweck matplotlib [0], eine
+der Datenverarbeitung. Wir verwenden zu diesem Zweck matplotlib [0], eine
 plotting library, die sich als de facto Standard für Visualisierungen aller Art
 etabliert hat.
 
@@ -18,13 +18,13 @@ import numpy as np
 x = np.linspace(0, 2*np.pi, 20)
 y = np.sin(x)
 
-## Plot der Daten als Linie
+# Plot der Daten als Linie
 fig, ax = plt.subplots()
 ax.plot(x, y, color='r',linewidth=2)
-ax.legend('Beispiel',loc='upper left')
+ax.legend('Beispiel', loc='upper left')
 
 
-## Plot der einzelnen Datenpunkte
+# Plot der einzelnen Datenpunkte
 fig, ax = plt.subplots()
 ax.plot(x, y, linestyle='none', marker='x', markersize=10)
 
