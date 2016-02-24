@@ -2,7 +2,7 @@
 Eine Sammlung von Skripten, die zur Einführung in die Datenverarbeitung mit
 Python dienen soll.
 
-#Installation
+##Installation
 Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket sondern
 lediglich um eine Sammlung von Skripten. Aus diesem Grund muss die Toolbox nicht
 im klassischesn Sinne installiert werden. Es genügt das Github repository zu
@@ -19,7 +19,7 @@ Kommando auszuführen:
 
 `conda env create`
 
-#Inhaltsverzeichnis
+##Inhaltsverzeichnis
 0. Einführung
   * [Aufbau eines Python Skriptes](scripts/00_01_Aufbau_eines_Python_Skriptes.py)
 1. Basics
