@@ -1,5 +1,6 @@
 #Python Toolbox
-Eine Sammlung von Skripten, die zur Einführung in die Datenverarbeitung mit Python dienen soll.
+Eine Sammlung von Skripten, die zur Einführung in die Datenverarbeitung mit
+Python dienen soll.
 
 #Installation
 Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket sondern
@@ -8,50 +9,46 @@ im klassischesn Sinne installiert werden. Es genügt das Github repository zu
 klonen. Um alle Skripte korrekt ausführen zu können, sind jedoch einige wenige
 Abhängigkeiten zu erfüllen.
 
-Möchte man diese mit pip installieren, kann die klassische requirements.txt
+Möchte man diese mit `pip` installieren, kann die klassische `requirements.txt`
 verwendet werden.
 
-Nutzer von [Anaconda](https://www.continuum.io/downloads) können mit Hilfe der beiliegenden
-environment.yml eine eigenständige Umgebung aufsetzen, die alle nötigen Pakete
-beinhaltet. Hierzu reicht es im Hauptverzeichnis folgendes Kommando auszuführen:
+Nutzer von [Anaconda](https://www.continuum.io/downloads) können mit Hilfe der
+beiliegenden `environment.yml` eine eigenständige Umgebung aufsetzen, die alle
+nötigen Pakete beinhaltet. Hierzu reicht es im Hauptverzeichnis folgendes
+Kommando auszuführen:
 
 `conda env create`
 
-
 #Inhaltsverzeichnis
 0. Einführung
-  * Aufbau eines Python Skriptes
-
+  * [Aufbau eines Python Skriptes](scripts/00_01_Aufbau_eines_Python_Skriptes.py)
 1. Basics
-  * Grundrechenarten
-  * Vektorrechnung
-  * Matrizenrechnung
-  * Strings
-  * Textausgabe
-  * if Abfrage
-  * for Schleife
-  * UNIX Shell in Python
-
+  * [Grundrechenarten](scripts/01_01_Grundrechenarten.py)
+  * [Vektorrechnung](scripts/01_02_Vektorrechnung.py)
+  * [Matrizenrechnung](scripts/01_03_Matrizenrechnung.py)
+  * [Strings](scripts/01_04_Strings.py)
+  * [Textausgabe](scripts/01_05_Textausgabe.py)
+  * [if-Abfrage](scripts/01_06_if_Abfrage.py)
+  * [for-Schleife](scripts/01_07_for_Schleife.py)
+  * [UNIX Shell in Python](scripts/01_08_UNIX_Shell_in_Python.py)
 2. Plotten
-  * Beispiel Plots
-  * Beispiel Subplot
-  * Plotten mehrerer Linien
-  * Plotten mit logarithmischer Achse
-  * Plot mit Zeitachse
-  * Achseneinstellungen
-  * Speichern von Abbildungen
-
+  * [Beispiel Plots](scripts/02_01_Beispiel_Plots.py)
+  * [Beispiel Subplots(scripts/02_02_Beispiel_Subplot.py)
+  * [Plotten mehrere Linien](scripts/02_03_Plotten_mehrerer_Linien.py)
+  * [Plotten mit logarithmischer Achse](scripts/02_04_Plotten_mit_logarithmischer_Achse.py)
+  * [Plot mit Zeitachse](scripts/02_05_Plot_mit_Zeitachse.py)
+  * [Achseneinstellungen](scripts/02_06_Achseneinstellungen.py)
+  * [Speichern von Abbildungen](scripts/02_07_Speichern_von_Abbildungen.py)
 3. Input & Output
-  * Einlesen einer ASCII Datei
-  * Einlesen mehrerer Dateien
-  * Speichern von Zahlenwerten in ASCII Files
-  * Speichern komplexer Daten in ASCII Files
-
+  * [Einlesen einer ASCII Datei](scripts/03_01_Einlesen_einer_ASCII_Datei.py)
+  * [Einlesen mehrerer Dateien](scripts/03_02_Einlesen_mehrerer_Dateien.py)
+  * [Speichern von Zahlenwerte in ASCII Files](scripts/03_03_Speichern_von_Zahlenwerten_in_ASCII_Files.py)
+  * [Speichern komplexer Daten in ASCII Files](scripts/03_04_Speichern_komplexer_Daten_in_ASCII_Files.py)
 4. Datenverarbeitung
-  * Lineares Fitten
-  * Exponential Fit
-  * Fehlwerte
-  * Histogramme
-  * Werte finden
-  * Autokorrelation
-  * Fouriertransformation
+  * [Lineares Fitten](scripts/04_01_Lineares_Fitten.py)
+  * [Exponential Fit](scripts/04_02_Exponential_Fit.py)
+  * [Fehlwerte](scripts/04_03_Fehlwerte.py)
+  * [Historgramme](scripts/04_04_Histogramme.py)
+  * [Werte finden](scripts/04_05_Werte_finden.py)
+  * [Autokorrelation](scripts/04_06_Autokorrelation.py)
+  * [Fouriertransformation](scripts/04_07_Fouriertransformation.py)
