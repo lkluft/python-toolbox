@@ -33,7 +33,7 @@ Kommando auszuführen:
   * [UNIX Shell in Python](scripts/01_08_UNIX_Shell_in_Python.py)
 2. Plotten
   * [Beispiel Plots](scripts/02_01_Beispiel_Plots.py)
-  * [Beispiel Subplots(scripts/02_02_Beispiel_Subplot.py)
+  * [Beispiel Subplot](scripts/02_02_Beispiel_Subplot.py)
   * [Plotten mehrere Linien](scripts/02_03_Plotten_mehrerer_Linien.py)
   * [Plotten mit logarithmischer Achse](scripts/02_04_Plotten_mit_logarithmischer_Achse.py)
   * [Plot mit Zeitachse](scripts/02_05_Plot_mit_Zeitachse.py)
