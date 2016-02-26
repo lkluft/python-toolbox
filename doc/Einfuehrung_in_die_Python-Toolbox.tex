@@ -33,22 +33,21 @@
 \maketitle
 
 \section*{Konzept}
-Der Werkzeugkasten soll zur Erleichterung der Auswertung der Versuche innerhalb
-des meteorologischen Instrumentenpraktikums dienen. Dabei ist das Ziel nicht die
-Bereitstellung von fertigen Skripten zur Auswertung einzelner Versuche, sondern
-die eine Hilfestellung durch kleine Hilfsskripte, die zur Veranschaulichung von
-grundlegenden Arbeitsschritten in Python dienen sollen.\\
+Der Werkzeugkasten bietet einen Einstieg in die Verarbeitung und Darstellung von
+Datensätzen mit Python 3.5. Das Ziel ist nicht die Bereitstellung fertiger
+Lösungen für spezielle Problemstellungen. Viel mehr werden die Nutzer an
+grundlegende Arbeitsschritte in Python herangeführt.
 
 Zu diesem Zweck steht eine Vielzahl von Pythonskripten zur Verfügung, die in
 kurzen Anwendungsbeispielen wichtige Funktionen und Auswertungskonzepte
-vorstellen sollen. Hierbei steht die Anschaulichkeit im Vordergrund, weshalb
-jedes Skript ausführbar ist, um das Verständnis des Quellcodes durch ein
-sichtbares Ergebnis zu unterstützen.\\
+vorstellen. Hierbei steht die Anschaulichkeit im Vordergrund: Jedes Skript ist
+ausführbar und unterstützt durch sichtbare Ergebnisse das Verständnis des
+Quellcodes.
 
+\subsection*{Anwendungsbeispiel}
 Die angedachte Nutzung des Werkzeugkastens zur Lösung einer Aufgabenstellung
 soll nun an einem kurzen Beispiel erläutert werden.
 
-\subsection*{Anwendungsbeispiel}
 Gegeben sei folgende Aufgabenstellung:
 
 \begin{quote}
@@ -59,36 +58,48 @@ Verlauf der Messdaten anpassen. Plotten Sie sowohl die Messsdaten als auch die
 gefittete Exponentialfunktion.''
 \end{quote}
 
-Der erste Schritt bei der Lösung einer solchen Aufgabenstellung ist das
-Aufstellen einer strukturierten Liste von Arbeitsschritten. So lässt sich die
-oben stehende Aufgabe aufteilen in
+Der erste Schritt bei der Lösung einer solchen Problemstellung ist es, das
+Problem in kleiner Teilaufgaben zu unterteilen. In unserem Beispiel lassen sich
+folgende Teilaufgaben definieren:
 
 \begin{enumerate}
   \item Das Einlesen der Messdaten.
-  \item Das Anpassen einer Exponentialfunktion an die Messdaten.
-  \item Das Berechnen der Zeitkonstante aus den Parametern der Exponentialfunktion.
+  \item Das Anpassen einer Exponentialfunktion an einen Datensatz.
   \item Das Plotten der Messdaten und der Exponentialfunktion.
-  \item Das Speichern des Plots als Bilddatei zur Einbindung in die Lösungsdatei.
+  \item Das Speichern des Plots als Bilddatei.
 \end{enumerate}
 
 Sollten bei der Bearbeitung dieser Teilschritte Probleme auftreten, kann in der
-Toolbox nach Anwendungsbeispielen zur Lösung gesucht werden. Für die fünf
-Arbeitsschritte aus der Beispielaufgabe finden sich z.B. folgende Skripte als
-Hilfestellung:
+Toolbox gezielt nach Hilfestellungen für die Teilaufgaben gesucht werden. Somit
+wird verhindert, dass der Nutzer viel Zeit bei der Suche auf Antworten nach
+unspezifischen Fragen verliert .
+
+\newpage
+
+Für die Lösung des Anwedungsnbeispiels sind folgende Abschnitte der Toolbox
+relevant:
 
 \begin{itemize}
-  \item \verb+Einlesen_einer_ASCII_Datei_Grundlagen.py+
-  \item \verb+Exponential_fit.py+
-  \item \verb+Plotten_mehrerer_Linien.py+
-  \item \verb+Speichern_von_Abbildungen.py+
+  \item Einlesen einer ASCII Datei Grundlagen.
+  \item Exponential fit.
+  \item Plotten mehrerer Linien.
+  \item Speichern von Abbildungen.
 \end{itemize}
 
-Mit Hilfe der Beispielskripte kann nun ein eigenes Pythonskript geschrieben
-werden, in dem die einzelnen Teilaufgaben nacheinander abgearbeitet
+Die jeweiligen Beispielskripte können nun als Bausteine genutzt werden, um ein
+eigenes Pythonskript zu schreiben, in welchem die Teilaufgaben abgearbeitet
 werden.\\
 
-Bei Problemen, die auch unter Verwendung der Toolbox nicht zu lösen sind, lohnt
-häufig ein Blick ins Internet. Man das Rad nicht immer neu erfinden. Des
-Weiteren ist gegenseitige Hilfestellungen unter den Teilnehmern ein efffektives
-Mittel gegen Frust bei der Datenauswertung!
+Bei Problemen, die auch unter Verwendung der Toolbox nicht zu lösen sind, gilt:
+
+\begin{center}
+  \textbf{DON'T PANIC!}
+\end{center}
+
+Ein Blick ins Internet\footnote{In 99\% der Fälle ist hiermit
+\url{http://www.stackoverflow.com} gemeint.} oder die Dokumentationen der
+genutzten Python Pakete kann in vielen Fällen helfen.  Man muss das Rad nicht
+immer neu erfinden.
+
+% TODO: Einen schönen Abschlussatz finden.
 \end{document}
