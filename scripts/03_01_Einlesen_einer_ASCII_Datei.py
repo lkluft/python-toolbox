@@ -24,7 +24,10 @@ with open('data/Testdatei.csv', 'rb') as f:
     # Mit Hilfe der replace Funktion lassen sich einzelne Zeichen oder Strings
     # in der Datei ersetzen. Der folgende Befehl ersetzt in jeder Zeile der
     # Datei Kommas durch Punkte (Python erwartet Punkte als Dezimalpunkte).
-    f = [line.replace(',','.') for line in f]
+    # Seit Python 3 werden files a Byte-Objekte gehandhabt. Um die
+    # String-Operation replace trotzdem ausführen zu können, muss jeder Zeile
+    # zunächste dekodiert und anschließend wieder kodiert werden.
+    f = [line.decode().replace(',','.').encode() for line in f]
 
     # Die NumPy Funktion genfromtxt() liest die Datei in ein Array ein.  Die
     # Angabe der Parameter dtype, comments, skip_header und usecols ist in
