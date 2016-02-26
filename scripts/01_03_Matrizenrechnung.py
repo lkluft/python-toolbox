@@ -22,7 +22,7 @@ print(B)
 print(A + B) # Addition
 print(A - B) # Subraktion
 print(A * B) # Multiplikation
-print(np.dot(A, B)) # Matrixmultiplikation
+print(A @ B) # Matrixmultiplikation
 print(A.T) # Transponieren einer Matrix
 
 

@@ -37,8 +37,8 @@ Y = np.fft.fft(y)/n  # FFT Berechnung und Normierung
 
 # Abschneiden der zweiten Vektorhälfte um einseitge FFT
 # für Zeitreihen mit realen Werten zu erhalten
-Y = 2 * Y[range(n/2)] # Amplitude der Fouriertransformierten
-freq = freq[range(n/2)] # Einseitiger Frequenzbereich
+Y = 2 * Y[range(int(n/2))] # Amplitude der Fouriertransformierten
+freq = freq[range(int(n/2))] # Einseitiger Frequenzbereich
 
 # Plot der Fouriertransformation
 axes[1].plot(freq, abs(Y), 'r')

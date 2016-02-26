@@ -20,7 +20,7 @@ files = glob.glob('data/test*.txt')
 # Mit einer Schleife lässt sich im Anschluss auf die einzelnen Eintrage der
 # Liste zugreifen.
 for filepath in files:
-    with open(filepath) as f:
+    with open(filepath, 'rb') as f:
         data = np.genfromtxt(f)
     print('Inhalt von Datei ' + filepath)
     print(data)
@@ -31,5 +31,5 @@ for filepath in files:
 # Liste angehängt werden.
 b = []
 for filepath in files:
-    with open(filepath) as f:
+    with open(filepath, 'rb') as f:
         b.append(np.genfromtxt(f))

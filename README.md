@@ -1,6 +1,6 @@
 #Python Toolbox
 Eine Sammlung von Skripten, die zur Einführung in die Datenverarbeitung mit
-Python dienen soll.
+Python 3.5 dienen soll.
 
 ##Installation
 Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket sondern

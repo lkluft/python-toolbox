@@ -20,7 +20,7 @@ import numpy as np
 # Die Datei 'Testdatei.csv' aus dem data/ Verzeichnis wird geöffnet und ist im
 # Folgenden über die Variable f ansprechbar.
 
-with open('data/Testdatei.csv') as f:
+with open('data/Testdatei.csv', 'rb') as f:
     # Mit Hilfe der replace Funktion lassen sich einzelne Zeichen oder Strings
     # in der Datei ersetzen. Der folgende Befehl ersetzt in jeder Zeile der
     # Datei Kommas durch Punkte (Python erwartet Punkte als Dezimalpunkte).
