@@ -24,6 +24,16 @@ v2 = np.linspace(10, 30, 3)
 # Ausgabe der beiden Arrays
 print(v1, v2)
 
+# Manipulation von Arrays
+print(v1 + 1.) # Erhöhen aller Elemente um 1
+print(v1 * 2.) # Multiplizieren aller Element mit 2
+print(v1 + v2) # Elementweise Summe zweier Arrays
+
+# Inspektion von Arrays
+print(v1.mean()) # Mittelwert alle Elemente
+print(v1.min()) # Kleinstes Element
+
+
 # Zugriff auf Spalten und Zeilen eines Arrays
 # Bei indexbasiertem Zugriff auf Daten eines Arrays ist zu beachten, dass Python
 # von 0 an indiziert!
