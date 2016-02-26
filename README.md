@@ -4,7 +4,7 @@ Python 3.5 dienen soll.
 
 ##Installation
 Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket sondern
-lediglich um eine Sammlung von Skripten [s. Dokumentation](doc/toolbox-doc.pdf).
+lediglich um eine Sammlung von Skripten s. [Dokumentation](doc/toolbox-doc.pdf).
 Aus diesem Grund muss die Toolbox nicht im klassischesn Sinne installiert
 werden. Es genügt das Github repository zu klonen. Um alle Skripte korrekt
 ausführen zu können, sind jedoch einige wenige Abhängigkeiten zu erfüllen.
