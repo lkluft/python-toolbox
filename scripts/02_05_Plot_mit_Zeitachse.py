@@ -10,8 +10,8 @@ import numpy as np
 # Zuerst wird eine Testdatei aus dem Windkanal eingelesen.  Für ein genaueres
 # Verständnis der Einleseroutine sei auf das Skript
 # Einlesen_einer_ASCII_Datei.csv verwiesen.
-with open('data/Windkanal_Testdaten.csv') as file:
-    file = (line.replace(',','.') for line in file)
+with open('data/Windkanal_Testdaten.csv', 'rb') as file:
+    file = (line.decode().replace(',','.').encode() for line in file)
     data = np.genfromtxt(file,
                   dtype=[('index', 'i1'),
                          ('date', 'S10'),
