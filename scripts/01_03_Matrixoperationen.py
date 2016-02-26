@@ -16,18 +16,10 @@ print(A)
 B = np.random.random_integers(0, 10, (3,3))
 print(B)
 
-## Rechenarten
-# Wenn die Dimensionen zweier Arrays übereinstimmt, lässt sich mit ihnen
-# rechnen, wie mit jeder anderen Variablen auc.
+# Rechenarten
 print(A + B) # Addition
 print(A - B) # Subraktion
 print(A * B) # Multiplikation
 print(A @ B) # Matrixmultiplikation
+print(np.cross(A, B)) # Kreuzprodukt
 print(A.T) # Transponieren einer Matrix
-
-
-## Zugriff auf die Werte einer Matrix
-# Zugriff auf Spalten und Zeilen einer Matrix
-print(A[1, 2]) # Dritter Wert der zweiten Zeile von A
-print(A[:, 1]) # Zweite Spalte von A
-print(A[2, :]) # Dritte Zeile von A

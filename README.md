@@ -26,8 +26,8 @@ Möchte man die Pakete mit `pip` installieren, kann die klassische
   * [Aufbau eines Python-Skriptes](scripts/00_01_Aufbau_eines_Python_Skriptes.py)
 1. Basics
   * [Grundrechenarten](scripts/01_01_Grundrechenarten.py)
-  * [Vektorrechnung](scripts/01_02_Vektorrechnung.py)
-  * [Matrizenrechnung](scripts/01_03_Matrizenrechnung.py)
+  * [Arrays](scripts/01_02_Arrays.py)
+  * [Matrixoperationen](scripts/01_03_Matrixoperationen.py)
   * [Strings](scripts/01_04_Strings.py)
   * [Textausgabe](scripts/01_05_Textausgabe.py)
   * [if-Abfrage](scripts/01_06_if_Abfrage.py)
