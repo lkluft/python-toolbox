@@ -40,10 +40,10 @@ Kommando auszuführen:
   * [Achseneinstellungen](scripts/02_06_Achseneinstellungen.py)
   * [Speichern von Abbildungen](scripts/02_07_Speichern_von_Abbildungen.py)
 3. Input & Output
-  * [Einlesen einer ASCII Datei](scripts/03_01_Einlesen_einer_ASCII_Datei.py)
+  * [Einlesen einer Datei](scripts/03_01_Einlesen_einer_Datei.py)
   * [Einlesen mehrerer Dateien](scripts/03_02_Einlesen_mehrerer_Dateien.py)
-  * [Speichern von Zahlenwerte in ASCII Files](scripts/03_03_Speichern_von_Zahlenwerten_in_ASCII_Files.py)
-  * [Speichern komplexer Daten in ASCII Files](scripts/03_04_Speichern_komplexer_Daten_in_ASCII_Files.py)
+  * [Speichern in einer Datei](scripts/03_03_Speichern_in_einer_Datei.py)
+  * [Formatiertes Speichern in einer Datei](scripts/03_04_Formatiertes_Speichern_in_einer_Datei.py)
 4. Datenverarbeitung
   * [Lineares Fitten](scripts/04_01_Lineares_Fitten.py)
   * [Exponential Fit](scripts/04_02_Exponential_Fit.py)
