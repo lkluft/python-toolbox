@@ -27,15 +27,15 @@ with open('data/Testdatei.csv', 'rb') as f:
     # Seit Python 3 werden files a Byte-Objekte gehandhabt. Um die
     # String-Operation replace trotzdem ausführen zu können, muss jeder Zeile
     # zunächste dekodiert und anschließend wieder kodiert werden.
-    f = [line.decode().replace(',','.').encode() for line in f]
+    f = [line.decode().replace(',', '.').encode() for line in f]
 
     # Die NumPy Funktion genfromtxt() liest die Datei in ein Array ein.  Die
     # Angabe der Parameter dtype, comments, skip_header und usecols ist in
     # diesem Fall eigentlich nicht nötig, da nue die default-Werte übergeben
-    # werden. Sie dienen lediglich als Anschauen, was alles eingestellt werden
+    # werden. Sie dienen lediglich zur Anschauung, was alles eingestellt werden
     # kann.
     data = np.genfromtxt(f, # Einzulesende Datei
-                         dtype=['f8','f8'], # Angabe des Dateitypen der Spalten
+                         dtype=['f8', 'f8'], # Angabe des Dateityps der Spalten
                          delimiter=';', # Trennzeichen zwischen den Werten
                          comments='#', # Einleitendes Zeichen für Kommentare
                          skip_header=0, # Reihen am Dateibeginn auslassen
