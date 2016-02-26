@@ -6,7 +6,7 @@ Python 3.5 dienen soll.
 Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket sondern
 lediglich um eine Sammlung von Skripten (s.
 [Dokumentation](doc/toolbox-doc.pdf)).  Aus diesem Grund muss die Toolbox nicht
-im klassischesn Sinne installiert werden. Es genügt das Github repository zu
+im klassischesn Sinne installiert werden. Es genügt das Github Repository zu
 klonen. Um alle Skripte korrekt ausführen zu können, sind jedoch einige wenige
 Abhängigkeiten zu erfüllen.
 
@@ -23,7 +23,7 @@ Möchte man die Pakete mit `pip` installieren, kann die klassische
 
 ##Inhaltsverzeichnis
 0. Einführung
-  * [Aufbau eines Python Skriptes](scripts/00_01_Aufbau_eines_Python_Skriptes.py)
+  * [Aufbau eines Python-Skriptes](scripts/00_01_Aufbau_eines_Python_Skriptes.py)
 1. Basics
   * [Grundrechenarten](scripts/01_01_Grundrechenarten.py)
   * [Vektorrechnung](scripts/01_02_Vektorrechnung.py)
@@ -32,11 +32,11 @@ Möchte man die Pakete mit `pip` installieren, kann die klassische
   * [Textausgabe](scripts/01_05_Textausgabe.py)
   * [if-Abfrage](scripts/01_06_if_Abfrage.py)
   * [for-Schleife](scripts/01_07_for_Schleife.py)
-  * [UNIX Shell in Python](scripts/01_08_UNIX_Shell_in_Python.py)
+  * [Aufruf externer Programme](scripts/01_08_Aufruf_externer_Programme.py)
 2. Plotten
   * [Beispiel Plots](scripts/02_01_Beispiel_Plots.py)
   * [Beispiel Subplot](scripts/02_02_Beispiel_Subplot.py)
-  * [Plotten mehrere Linien](scripts/02_03_Plotten_mehrerer_Linien.py)
+  * [Plotten mehrerer Linien](scripts/02_03_Plotten_mehrerer_Linien.py)
   * [Plotten mit logarithmischer Achse](scripts/02_04_Plotten_mit_logarithmischer_Achse.py)
   * [Plot mit Zeitachse](scripts/02_05_Plot_mit_Zeitachse.py)
   * [Achseneinstellungen](scripts/02_06_Achseneinstellungen.py)
