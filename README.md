@@ -9,15 +9,16 @@ Aus diesem Grund muss die Toolbox nicht im klassischesn Sinne installiert
 werden. Es genügt das Github repository zu klonen. Um alle Skripte korrekt
 ausführen zu können, sind jedoch einige wenige Abhängigkeiten zu erfüllen.
 
-Möchte man diese mit `pip` installieren, kann die klassische `requirements.txt`
-verwendet werden.
-
 Nutzer von [Anaconda](https://www.continuum.io/downloads) können mit Hilfe der
 beiliegenden `environment.yml` eine eigenständige Umgebung aufsetzen, die alle
 nötigen Pakete beinhaltet. Hierzu reicht es im Hauptverzeichnis folgendes
 Kommando auszuführen:
 
 `conda env create`
+
+Möchte man die Pakete mit `pip` installieren, kann die klassische
+`requirements.txt` verwendet werden.
+
 
 ##Inhaltsverzeichnis
 0. Einführung
