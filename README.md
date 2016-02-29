@@ -6,7 +6,7 @@ Python 3.5 dienen soll.
 Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket sondern
 lediglich um eine Sammlung von Skripten (s.
 [Dokumentation](doc/toolbox-doc.pdf)).  Aus diesem Grund muss die Toolbox nicht
-im klassischesn Sinne installiert werden. Es genügt das Github Repository zu
+im klassischen Sinne installiert werden. Es genügt das Github Repository zu
 klonen. Um alle Skripte korrekt ausführen zu können, sind jedoch einige wenige
 Abhängigkeiten zu erfüllen.
 
@@ -19,7 +19,6 @@ Kommando auszuführen:
 
 Möchte man die Pakete mit `pip` installieren, kann die klassische
 `requirements.txt` verwendet werden.
-
 
 ##Inhaltsverzeichnis
 0. Einführung
