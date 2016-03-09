@@ -28,7 +28,6 @@ s4 = str(x)  # enthält das Zeichen '3' als Character/String
 # des + Operators verknüpfen.
 s5 = 'Eins plus zwei ist ' + s4
 
-# Strings lassen sich mit den Funktion print() auf das Command Window
-# ausgeben.
+# Strings lassen sich mit den Funktion print() ausgeben.
 for s in [s1, s2, s3, s4, s5]:
     print(s)
