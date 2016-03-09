@@ -34,6 +34,7 @@ Möchte man die Pakete mit `pip` installieren, kann die klassische
   * [if-Abfrage](scripts/01_08_if_Abfrage.py)
   * [for-Schleife](scripts/01_09_for_Schleife.py)
   * [Aufruf externer Programme](scripts/01_10_Aufruf_externer_Programme.py)
+  * [Funktionen](scripts/01_11_Funktionen.py)
 2. Plotten
   * [Beispiel Plots](scripts/02_01_Beispiel_Plots.py)
   * [Beispiel Subplot](scripts/02_02_Beispiel_Subplot.py)
