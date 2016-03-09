@@ -13,10 +13,10 @@ werden.  Eine vollstädnige Liste findet sich in der Python Dokumentation
 
 # Basistypen
 
-i = 1 # Integer (Ganzzahlen)
-f = 1.0 # Float (Gleitkommazahl)
-s = 'eins' # String (Zeichenkette)
-b = True # Boolean (Boolscher Wahrheitswert)
+i = 1  # Integer (Ganzzahlen)
+f = 1.0  # Float (Gleitkommazahl)
+s = 'eins'  # String (Zeichenkette)
+b = True  # Boolean (Boolscher Wahrheitswert)
 
 
 # Erweiterte Datentypen
@@ -32,4 +32,4 @@ l.sort()  # l = [1, 2, 3, 4]
 # abzuspeichern.  Der Zugriff auf den gespeicherten Wert erfolgt dann
 # über den jeweiligen key.
 d = {'key': 1}
-var = d['key'] # var = 1
+var = d['key']  # var = 1

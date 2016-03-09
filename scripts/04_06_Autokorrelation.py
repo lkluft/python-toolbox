@@ -6,7 +6,7 @@ import numpy as np
 
 # Erstellen eines Cosinus mit Rauschen
 x = np.linspace(0, 25, 200)
-y = 2 * np.cos(2 * x) + 1 * np.random.normal(size=x.size)
+y = 2*np.cos(2*x) + np.random.normal(size=x.size)
 
 # Die Autkorrelation wird mit Hilfe der Funktion correlate() gebildet.
 # Das Ergebnis wird direkt skaliert.

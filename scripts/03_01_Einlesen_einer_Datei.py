@@ -37,12 +37,13 @@ with open('data/Testdatei.csv', 'rb') as f:
     # ist in diesem Fall eigentlich nicht nötig, da nue die
     # default-Werte übergeben werden.  Sie dienen lediglich zur
     # Anschauung, was alles eingestellt werden kann.
-    data = np.genfromtxt(f, # Einzulesende Datei
-                         dtype=['f8', 'f8'],  # Dateityp der Spalten
-                         delimiter=';',  # Trennzeichen
-                         comments='#',  # Kommentarerkennung
-                         skip_header=0,  # Reihen am Beginn auslassen
-                         usecols=None  # Ggf. nur einzelne Spalte lesen
-                        )
+    data = np.genfromtxt(
+        f,  # Einzulesende Datei
+        dtype=['f8', 'f8'],  # Dateityp der Spalten
+        delimiter=';',  # Trennzeichen
+        comments='#',  # Kommentarerkennung
+        skip_header=0,  # Reihen am Beginn auslassen
+        usecols=None  # Ggf. nur einzelne Spalte lesen
+        )
 
 print(data)  # Ausgabe der eingelesenen Werte

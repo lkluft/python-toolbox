@@ -21,7 +21,7 @@ F[1] = 1
 # Die Schleife läuft von 2 an über alle Einträge im Array.  Nach
 # Berechnung der jeweiligen Fibonacci-Zahl wird diese ausgegeben.
 for i in np.arange(2, len(F)):
-    F[i] = F[i - 1] + F[i - 2]
+    F[i] = F[i-1] + F[i-2]
     print('F({0}) = {1}'.format(i, F[i]))
 
 # Die Deklaration, über welchen Block die Schleife laufen soll, erfolgt

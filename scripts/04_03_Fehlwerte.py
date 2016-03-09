@@ -18,7 +18,7 @@ ts = np.array([14, 15, 15, -999, -999, 13, 14], dtype='float')
 # Arrays lassen sich nicht nur mit expliziten Indizes, sondern auch mit
 # logischen Ausdrücken aufrufen.  Die nächste Zeile ersetzt jeden Wert
 # von ts, der -999 ist, mit dem Wert nan.
-ts[ts==-999] = np.nan
+ts[ts == -999] = np.nan
 
 # Einige Funktionen in Python (z.B. mean) geben bei Anwendung auf Arrays
 # mit nan-Werten selbst auch nur nan als Rückgabewert aus.

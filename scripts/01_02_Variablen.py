@@ -17,4 +17,4 @@ var2 = var * 2  # var2 hält den Wert 4
 # Manipulation einer Variablen.
 # Möchte man den Wert einer Variablen verändern (x = x * 2) bietet Python die
 # folgende Syntax.  var muss in diesem Fall nur einmal aufgerufen werden.
-var *= 2 # auch +=, -=, /=
+var *= 2  # auch +=, -=, /=

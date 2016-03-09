@@ -12,7 +12,7 @@ import numpy as np
 
 
 # Erstellen eines normalverteilten Datensatzes
-x=np.random.normal(size=100)
+x = np.random.normal(size=100)
 
 # Histogramm mit 5 bin-Klassen
 fig, axes = plt.subplots(1, 2)

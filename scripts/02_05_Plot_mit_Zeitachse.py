@@ -9,11 +9,12 @@ import numpy as np
 # Zuerst wird eine Testdatei aus dem Windkanal eingelesen.
 with open('data/Windkanal_Testdaten.csv', 'rb') as file:
     file = (line.decode().replace(',','.').encode() for line in file)
-    data = np.genfromtxt(file,
-                         dtype=None,
-                         names=True,
-                         delimiter=';',
-                        )
+    data = np.genfromtxt(
+        file,
+        dtype=None,
+        names=True,
+        delimiter=';',
+        )
 
 # Im nächsten Schritt wird die eingelesene Zeit in einen Zahlenwert
 # umgewandelt.  Somit lässt sich die Variable time als x-Wert für einen

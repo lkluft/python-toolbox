@@ -20,10 +20,10 @@ if x == 2:
 if x < 2:
     print('Ich werde nicht ausgeführt.')
 
-if ( x > 2 ) or ( x == 2 ):
+if (x > 2) or (x == 2):
     print('Ich werde ausgeführt.')
 
-if ( x > 2 ) and (x == 2 ):
+if (x > 2) and (x == 2):
     print('Ich werde nicht ausgeführt.')
 
 # Geschachtelte Abfrage

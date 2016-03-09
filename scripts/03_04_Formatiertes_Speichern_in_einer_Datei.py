@@ -26,4 +26,4 @@ stacked_data = np.column_stack((dat1, dat2, dat3))
 np.savetxt('Testdatei_formatierte_Daten.txt',
            stacked_data,
            fmt='%3d;%7.5f %7.2f'
-          )
+           )

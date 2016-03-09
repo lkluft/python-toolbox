@@ -15,7 +15,7 @@ import numpy as np
 
 # Erstellen einer zufälligen Zeitreihe. (e-Funktion + Rauschen)
 x = np.linspace(1, 5, 100)
-y = 10 + np.exp(x) + 5 * np.random.normal(size=np.size(x));
+y = 10 + np.exp(x) + 5*np.random.normal(size=np.size(x));
 
 # Definition der Funktion func, an die gefittet werden soll.
 def func(x, a, b, c):

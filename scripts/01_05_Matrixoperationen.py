@@ -5,6 +5,7 @@ Im Folgenden wird der Umgang mit mehrdimensionalen Arrays
 veranschaulicht.  Die Beispiele zeigen zweidimensionale Arrays
 (Matrizen), das Verhalten lässt sich jedoch auf Arrays höherer
 Dimensionen übertragen.
+
 """
 
 import numpy as np
