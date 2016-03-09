@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """Erstellen einfacher Histogramme mit matplotlib.
 
-Histogramme lassen sich in Python mit der Funktion hist() erstellen. Als
-Parameter werden der Funktion der zu analysierende array und die bin-Grösse
-mitgegeben.
+Histogramme lassen sich in Python mit der Funktion hist() erstellen.
+Als Parameter werden der Funktion der zu analysierende array und die
+bin-Grösse mitgegeben.
 
 """
 
@@ -24,4 +24,4 @@ n, bins, _ = axes[0].hist(x, bins=5)
 # Histogramm mit vorgegebenen Grenzen
 n, bins, _ = axes[1].hist(x, range=[-3, 3])
 
-plt.show() # Anzeigen des Plots
+plt.show()  # Anzeigen des Plots

@@ -2,8 +2,9 @@
 """Anpassen einer e-Funktion an einen Datensatz.
 
 Exponentielles Fitten ist ein häufiger Schritt bei der Auswertung von
-Messreihen. In Python bietet das Modul scipy.optimize eine curve_fit() Funktion.
-Diese ermöglicht das Fitten von Daten an eine beliebige Funktion.
+Messreihen.  In Python bietet das Modul scipy.optimize eine curve_fit()
+Funktion.  Diese ermöglicht das Fitten von Daten an eine beliebige
+Funktion.
 
 """
 
@@ -33,4 +34,4 @@ ax.plot(x, y, marker='x', markersize=5, linestyle='none')
 ax.plot(x, func(x, *popt), color='r')
 ax.legend(['Data','Fit'],loc='upper left')
 
-plt.show() # Anzeigen des Plots
+plt.show()  # Anzeigen des Plots

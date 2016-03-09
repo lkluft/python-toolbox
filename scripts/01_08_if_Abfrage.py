@@ -2,16 +2,15 @@
 """Steuerung des Programmablaufes mittels if-Abfragen.
 
 Ein elementares Werkzeug der Prozesssteuerung in der Programmierung sind
-bedingte Abfagen. In Python lassen sich diese in Form von if-Konstrukten
-realisieren. Eine if-Abfrage steuert mit Hilfe einer Bedingung den Ablauf des
-Skriptes.
+bedingte Abfagen.  In Python lassen sich diese in Form von
+if-Konstrukten realisieren.  Eine if-Abfrage steuert mit Hilfe einer
+Bedingung den Ablauf des Skriptes.
 
 """
 
 # Anders als in anderen Programmiersprachen werden Anweisungen nicht
-# durch ein Keyword (z.B. endif, end, fi, ...) beendet oder eingeklammert.
-# Der Block wird leidglich durch Einrückung deklariert!
-
+# durch ein Keyword (z.B. endif, end, fi, ...) beendet oder
+# eingeklammert.  Der Block wird leidglich durch Einrückung deklariert!
 x = 2
 
 # Einfache Abfragen

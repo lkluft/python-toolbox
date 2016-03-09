@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """Manipulation des Achsenbeschriftung und -einteilung.
 
-Python bietet viele Möglichkeiten die Darstellung von Grafiken (figures) zu
-editieren. In diesem Skript sollen einige davon dargestellt werden. Hierbei
-besteht in keinster Weise Anspruch auf Vollständigkeit.
+Python bietet viele Möglichkeiten die Darstellung von Grafiken (figures)
+zu editieren.  In diesem Skript sollen einige davon dargestellt werden.
+Hierbei besteht in keinster Weise Anspruch auf Vollständigkeit.
 
 """
 
@@ -36,4 +36,4 @@ ax.set_xlabel('x-Achse')
 ax.set_ylabel('y-Achse')
 ax.set_title('Beispielplot')
 
-plt.show() # Anzeigen des Plots
+plt.show()  # Anzeigen des Plots

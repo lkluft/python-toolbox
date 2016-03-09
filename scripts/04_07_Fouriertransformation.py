@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Anwenden der FFT auf einen Datensatz.
 
-Bei der Untersuchung von Zeitreihen kann mit Hilfe einer Fouriertransformation
-bestimmt werden, ob dem Datensatz eine Periodiztät zugrunde liegt.
-Zur Veranschaulichung wird eine Datenreihe mit Frequenzen bei 5 und 25 Hz
-erzeugt und verrauscht.
+Bei der Untersuchung von Zeitreihen kann mit Hilfe einer
+Fouriertransformation bestimmt werden, ob dem Datensatz eine Periodiztät
+zugrunde liegt.  Zur Veranschaulichung wird eine Datenreihe mit
+Frequenzen bei 5 und 25 Hz erzeugt und verrauscht.
 
 """
 
@@ -13,8 +13,8 @@ import numpy as np
 
 
 # Abtastfrequenz des Messgerätes
-Fs = 150 # Abtastfreuenz
-Ts = 1.0/Fs # Abtastintervall
+Fs = 150  # Abtastfreuenz
+Ts = 1.0 / Fs  # Abtastintervall
 
 # Erstellen einer Zeitreihe (Sinus + Rauschen)
 t = np.arange(0, 1, Ts)
@@ -29,20 +29,20 @@ axes[0].set_xlabel('Zeit')
 axes[0].set_ylabel('Amplitude')
 
 # Berechnung der Fouriertransformierten
-n = len(y) # Länge der Zeitreihe
-k = np.arange(n) # Werte von 0 bis Länge(y)-1
-T = n/Fs # Aufnahmelänge der Zeitreihe
-freq = k/T # Beidseitiger Frequenzbereich
-Y = np.fft.fft(y)/n  # FFT Berechnung und Normierung
+n = len(y)  # Länge der Zeitreihe
+k = np.arange(n)  # Werte von 0 bis Länge(y)-1
+T = n / Fs  # Aufnahmelänge der Zeitreihe
+freq = k / T  # Beidseitiger Frequenzbereich
+Y = np.fft.fft(y) / n   # FFT Berechnung und Normierung
 
-# Abschneiden der zweiten Vektorhälfte um einseitge FFT
-# für Zeitreihen mit realen Werten zu erhalten
-Y = 2 * Y[range(int(n/2))] # Amplitude der Fouriertransformierten
-freq = freq[range(int(n/2))] # Einseitiger Frequenzbereich
+# Abschneiden der zweiten Vektorhälfte um einseitge FFT für Zeitreihen
+# mit realen Werten zu erhalten
+Y = 2 * Y[range(int(n / 2))]  # Amplitude der Fouriertransformierten
+freq = freq[range(int(n / 2))]  # Einseitiger Frequenzbereich
 
 # Plot der Fouriertransformation
 axes[1].plot(freq, abs(Y), 'r')
 axes[1].set_xlabel('Frequenz (Hz)')
 axes[1].set_ylabel('Amplitude')
 
-plt.show() # Anzeigen des Plots
+plt.show()  # Anzeigen des Plots

@@ -2,7 +2,7 @@
 """Anpassen einer Geraden an einen Datensatz.
 
 Zum Ermitteln von Trends in Datenreihen, kann eine lineare Regression
-durchgeführt werden. Diese lässt sich mit der numpy Funktion polyfit
+durchgeführt werden.  Diese lässt sich mit der numpy Funktion polyfit
 durchführen.
 
 """
@@ -20,7 +20,7 @@ a = np.polyfit(x, y, 1)
 
 # Plotten der Ausgleichsgeraden durch die Punktwolke
 fig, ax = plt.subplots()
-ax.plot(x, y, marker='x', linestyle='none') # Plot der Zahlenreihe
-ax.plot(x, np.polyval(a, x), 'r') # Plot des Fits
+ax.plot(x, y, marker='x', linestyle='none')  # Plot der Zahlenreihe
+ax.plot(x, np.polyval(a, x), 'r')  # Plot des Fits
 
-plt.show() # Anzeigen des Plots
+plt.show()  # Anzeigen des Plots

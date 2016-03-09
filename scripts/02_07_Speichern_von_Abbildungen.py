@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Speichern von Abbildungen.
 
-Die Funktion savefig() bietet die Möglichkeit erstellte Grafiken direkt aus dem
-Skript heraus abzuspeichern.
+Die Funktion savefig() bietet die Möglichkeit erstellte Grafiken direkt
+aus dem Skript heraus abzuspeichern.
 
 """
 
@@ -18,7 +18,7 @@ y = x**2
 fig, ax = plt.subplots()
 ax.plot(x, y)
 
-# Der Zugriff auf die figure erfolgt über die Variable fig. Das Dateiformat
-# wird direkt durch die Dateiendung bestimmt.
+# Der Zugriff auf die figure erfolgt über die Variable fig. Das
+# Dateiformat wird direkt durch die Dateiendung bestimmt.
 fig.savefig('./python_testplot.pdf')
 fig.savefig('./python_testplot.png')

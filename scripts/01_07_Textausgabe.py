@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 """Ausgabe von Text auf die Standardausgabe.
 
-Ein wichtiger Bestandteil von Programmierung ist die Ausgabe von Text auf das
-Terminal. Es ermöglicht ein visuelles Feedback des Programmablaues. Auch
-Ergebnisse können direkt auf das Terminal ausgegeben werden.
+Ein wichtiger Bestandteil von Programmierung ist die Ausgabe von Text
+auf das Terminal.  Es ermöglicht ein visuelles Feedback des
+Programmablaues.  Auch Ergebnisse können direkt auf das Terminal
+ausgegeben werden.
 
 """
 
-# Mit Hilfe der print()-Funktion können Strings und Variablen direkt ausgegeben
-# werden.
+# Mit Hilfe der print()-Funktion können Strings und Variablen direkt
+# ausgegeben werden.
 print('Diese Zeile wird im Terminal ausgegeben.')
 
 # ... oder mit Variablen

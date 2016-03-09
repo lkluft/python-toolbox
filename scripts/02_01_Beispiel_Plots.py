@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Erstellen einfacher Plots mit matplotlib.
 
-Das grafische Darstellen von Daten ist einer der wichtigsten Aufgabenbereiche
-der Datenverarbeitung. Wir verwenden zu diesem Zweck matplotlib [0], eine
-plotting library, die sich als de facto Standard für Visualisierungen aller Art
-etabliert hat.
+Das grafische Darstellen von Daten ist einer der wichtigsten
+Aufgabenbereiche der Datenverarbeitung. Wir verwenden zu diesem Zweck
+matplotlib [0], eine plotting library, die sich als de facto Standard
+für Visualisierungen aller Art etabliert hat.
 
 [0] http://matplotlib.org/
 
