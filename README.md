@@ -17,9 +17,6 @@ Kommando auszuführen:
 
 `conda env create`
 
-Möchte man die Pakete mit `pip` installieren, kann die klassische
-`requirements.txt` verwendet werden.
-
 ##Inhaltsverzeichnis
 0. Einführung
   * [Aufbau eines Python-Skriptes](scripts/00_01_Aufbau_eines_Python_Skriptes.py)
