@@ -48,11 +48,12 @@ Möchte man die Pakete mit `pip` installieren, kann die klassische
   * [Einlesen mehrerer Dateien](scripts/03_02_Einlesen_mehrerer_Dateien.py)
   * [Speichern in einer Datei](scripts/03_03_Speichern_in_einer_Datei.py)
   * [Formatiertes Speichern in einer Datei](scripts/03_04_Formatiertes_Speichern_in_einer_Datei.py)
+  * [Einlesen einer netCDF-Datei](scripts/03_05_Einlesen_einer_netCDF-Datei.py)
 4. Datenverarbeitung
   * [Lineares Fitten](scripts/04_01_Lineares_Fitten.py)
   * [Exponential Fit](scripts/04_02_Exponential_Fit.py)
   * [Fehlwerte](scripts/04_03_Fehlwerte.py)
-  * [Historgramme](scripts/04_04_Histogramme.py)
+  * [Histogramme](scripts/04_04_Histogramme.py)
   * [Werte finden](scripts/04_05_Werte_finden.py)
   * [Autokorrelation](scripts/04_06_Autokorrelation.py)
   * [Fouriertransformation](scripts/04_07_Fouriertransformation.py)
