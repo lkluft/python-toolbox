@@ -24,6 +24,7 @@ import glob
 import os
 import subprocess
 
+from netCDF4 import Dataset
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
