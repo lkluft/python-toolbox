@@ -15,7 +15,8 @@ beiliegenden `environment.yml` eine eigenständige Umgebung aufsetzen, die alle
 nötigen Pakete beinhaltet. Hierzu reicht es im Hauptverzeichnis folgendes
 Kommando auszuführen:
 
-`conda env create`
+```bash
+conda env create
 
 ##Inhaltsverzeichnis
 0. Einführung
