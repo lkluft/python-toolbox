@@ -34,9 +34,9 @@ with open('data/Testdatei.csv', 'rb') as f:
 
     # Die NumPy Funktion genfromtxt() liest die Datei in ein Array ein.
     # Die Angabe der Parameter dtype, comments, skip_header und usecols
-    # ist in diesem Fall eigentlich nicht nötig, da nue die
-    # default-Werte übergeben werden.  Sie dienen lediglich zur
-    # Anschauung, was alles eingestellt werden kann.
+    # ist in diesem Fall eigentlich nicht nötig, da nur die
+    # default-Werte übergeben werden.  Sie dienen lediglich als
+    # Beispiel, was unter anderem eingestellt werden kann.
     data = np.genfromtxt(
         f,  # Einzulesende Datei
         dtype=['f8', 'f8'],  # Dateityp der Spalten
