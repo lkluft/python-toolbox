@@ -41,7 +41,8 @@ conda env create
   * [Plotten mit logarithmischer Achse](scripts/02_04_Plotten_mit_logarithmischer_Achse.py)
   * [Plot mit Zeitachse](scripts/02_05_Plot_mit_Zeitachse.py)
   * [Achseneinstellungen](scripts/02_06_Achseneinstellungen.py)
-  * [Speichern von Abbildungen](scripts/02_07_Speichern_von_Abbildungen.py)
+  * [Style_Sheets](scripts/02_07_Style_sheets.py)
+  * [Speichern von Abbildungen](scripts/02_08_Speichern_von_Abbildungen.py)
 3. Input & Output
   * [Einlesen einer Datei](scripts/03_01_Einlesen_einer_Datei.py)
   * [Einlesen mehrerer Dateien](scripts/03_02_Einlesen_mehrerer_Dateien.py)
