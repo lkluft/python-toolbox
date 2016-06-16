@@ -18,7 +18,10 @@ x = np.linspace(-10, 10, 100)
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.plot(x, x**2)
 
-## Eigenschaften der Achsen editieren
+#
+# Eigenschaften der Achsen editieren
+#
+
 # Wertebereich der Achsen
 ax.set_xlim(-10, 10)
 ax.set_ylim(0, 100)
@@ -26,7 +29,9 @@ ax.set_ylim(0, 100)
 # Explizite Angabe der angezeigten Werte auf der y-Achse:
 ax.set_yticks([1, 7, 42, 99])
 
-## Achsenbeschriftung
+#
+# Achsenbeschriftung
+#
 
 # Die Schriftgrösse (FontSize) auf 16 Pt verändern.
 mpl.rc('font', size=16)

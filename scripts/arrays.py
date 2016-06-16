@@ -36,7 +36,7 @@ v1.min()  # Kleinstes Element
 # Zugriff auf Spalten und Zeilen eines Arrays
 # Bei indexbasiertem Zugriff auf Daten eines Arrays ist zu beachten,
 # dass Python von 0 an indiziert!
-A = np.arange(9).reshape(3, 3) # Erstellen einer 3x3-Matrix
+A = np.arange(9).reshape(3, 3)  # Erstellen einer 3x3-Matrix
 A[1, 2]  # Dritter Wert der zweiten Zeile von A
 A[:, 1]  # Zweite Spalte von A
 A[2, :]  # Dritte Zeile von A

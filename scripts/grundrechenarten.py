@@ -22,4 +22,4 @@ import numpy as np
 # modul.funktion. Auch Konstanten können in Modulen enthalten sein.
 np.sqrt(16)  # Wurzel
 np.pi  # Pi
-np.sin(np.pi/2)  # Sinus
+np.sin(np.pi / 2)  # Sinus

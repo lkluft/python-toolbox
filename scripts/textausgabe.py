@@ -18,4 +18,4 @@ print(var)
 
 # Die Objektklasse String bietet eine format() Funktion an, mit der
 # definierte Stellen im String mit Variablen ersetzt werden können.
-print('{0} + {1} = {2}'.format(1, 2, 1+2))
+print('{0} + {1} = {2}'.format(1, 2, 1 + 2))

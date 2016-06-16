@@ -21,7 +21,7 @@ s3 = 'Alles.was_hier steht,ist;ein:String'
 # Häufig kommt es vor, dass man ein Ergebnis in einen String umwandeln
 # möchte (z.B. dynamische Abbildungstitel).  Die Umwandlung von Zahlen in
 # Strings erfolgt z.B. über die Funktion str()
-x = 1+2  # enthält die Zahl 3
+x = 1 + 2  # enthält die Zahl 3
 s4 = str(x)  # enthält das Zeichen '3' als Character/String
 
 # Möchte man mehrere Strings zusammensetzen, kann man diese mit Hilfe

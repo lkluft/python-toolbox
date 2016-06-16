@@ -21,7 +21,7 @@ print(plt.style.available)
 # Setzen eines matplotlib styles.
 plt.style.use('bmh')
 
-x = np.linspace(0, 2*np.pi, 50)
+x = np.linspace(0, 2 * np.pi, 50)
 
 fig, ax = plt.subplots()
 ax.plot(x, np.sin(x), label='Sinus')

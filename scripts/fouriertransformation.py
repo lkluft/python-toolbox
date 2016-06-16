@@ -18,8 +18,8 @@ Ts = 1.0 / Fs  # Abtastintervall
 
 # Erstellen einer Zeitreihe (Sinus + Rauschen)
 t = np.arange(0, 1, Ts)
-y = (np.sin(2*np.pi*5*t) + 0.6*np.sin(2*np.pi*25*t)
-     + 0.7*np.random.normal(size=t.size))
+y = (np.sin(2 * np.pi * 5 * t) + 0.6 * np.sin(2 * np.pi * 25 * t) +
+     0.7 * np.random.normal(size=t.size))
 
 # Plot der Zeitreihe und Beschriftung der Achsen
 fig, axes = plt.subplots(2, 1)

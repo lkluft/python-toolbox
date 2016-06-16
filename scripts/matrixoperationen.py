@@ -12,8 +12,8 @@ import numpy as np
 
 
 # Definition zufälliger Matrizen
-A = np.random.random_integers(0, 10, (3,3))
-B = np.random.random_integers(0, 10, (3,3))
+A = np.random.random_integers(0, 10, (3, 3))
+B = np.random.random_integers(0, 10, (3, 3))
 
 # Rechenarten
 A + B  # Addition

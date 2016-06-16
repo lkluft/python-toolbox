@@ -8,7 +8,7 @@ import numpy as np
 
 # Zuerst wird eine Testdatei aus dem Windkanal eingelesen.
 with open('data/Windkanal_Testdaten.csv', 'rb') as file:
-    file = (line.decode().replace(',','.').encode() for line in file)
+    file = (line.decode().replace(',', '.').encode() for line in file)
     data = np.genfromtxt(
         file,
         dtype=None,
@@ -34,6 +34,6 @@ ax.set_xlabel('Uhrzeit')
 # Datumsformat editieren.
 formatter = mpl.dates.DateFormatter('%H:%M:%S')
 ax.xaxis.set_major_formatter(formatter)
-#plt.xticks(rotation=45)  # Auskommentieren um die x-Ticks zu drehen
+# plt.xticks(rotation=45)  # Auskommentieren um die x-Ticks zu drehen
 
 plt.show()  # Anzeigen des Plots

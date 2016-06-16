@@ -13,7 +13,7 @@ import numpy as np
 
 # Erstellen einer Zufallsreihe mit zufälligem Rauschen
 x = np.linspace(1, 10, 100)
-y = 0.5*x + np.random.uniform(-1, 1, size=100)
+y = 0.5 * x + np.random.uniform(-1, 1, size=100)
 
 # Ausgleichsgerade 1. Ordnung erstellen [ f(x) = a(1) * x + a(2) ]
 a = np.polyfit(x, y, 1)

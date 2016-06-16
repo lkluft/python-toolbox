@@ -15,12 +15,12 @@ import numpy as np
 
 
 # Erstellen einer Datenreihe (Nebenrechnung)
-x = np.linspace(0, 2*np.pi, 20)
+x = np.linspace(0, 2 * np.pi, 20)
 y = np.sin(x)
 
 # Plot der Daten als Linie
 fig, ax = plt.subplots()
-ax.plot(x, y, color='r',linewidth=2)
+ax.plot(x, y, color='r', linewidth=2)
 ax.legend('Beispiel', loc='upper left')
 
 
