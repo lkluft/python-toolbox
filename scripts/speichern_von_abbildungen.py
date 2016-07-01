@@ -18,7 +18,10 @@ y = x**2
 fig, ax = plt.subplots()
 ax.plot(x, y)
 
-# Der Zugriff auf die figure erfolgt über die Variable fig. Das
-# Dateiformat wird direkt durch die Dateiendung bestimmt.
+# Der Zugriff auf die figure erfolgt über die Variable fig. Das Dateiformat
+# wird direkt durch die Dateiendung bestimmt.
+# Bei Rastergrafiken (GIF, JPEG, PNG) ist es sinnvoll eine Punktdichte (DPI)
+# anzugeben, da der Standardwert (80) keine ausreichende Bildqualität
+# gewährleistet.
 fig.savefig('./python_testplot.pdf')
-fig.savefig('./python_testplot.png')
+fig.savefig('./python_testplot.png', dpi=300)
