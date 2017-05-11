@@ -1,10 +1,10 @@
-#Python Toolbox
+# Python Toolbox
 Eine Sammlung von Skripten, die zur Einführung in die Datenverarbeitung mit
 Python 3.5 dienen soll.
 
-##Installation
-Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket sondern
-lediglich um eine Sammlung von Skripten (s.
+## Installation
+Bei der Python Toolbox handelt es sich nicht um ein eigenständiges Paket
+sondern lediglich um eine Sammlung von Skripten (s.
 [Dokumentation](doc/toolbox-doc.pdf)).  Aus diesem Grund muss die Toolbox nicht
 im klassischen Sinne installiert werden. Es genügt das Github Repository zu
 klonen. Um alle Skripte korrekt ausführen zu können, sind jedoch einige wenige
@@ -19,7 +19,7 @@ Kommando auszuführen:
 conda env create
 ```
 
-##Inhaltsverzeichnis
+## Inhaltsverzeichnis
 0. Einführung
   * [Aufbau eines Python-Skriptes](scripts/aufbau_eines_python_skriptes.py)
 1. Basics
