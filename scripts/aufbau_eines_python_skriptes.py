@@ -20,15 +20,15 @@ dann weiter ins Detail gegangen werden.
 # der Vielfalt der Pythonmodule nicht die Uebersicht zu verlieren,
 # beschränkt sich dieser Werkzeugkasten auf folgende Module:
 
-import glob
-import os
-import subprocess
+import glob  # noqa
+import os  # noqa
+import subprocess  # noqa
 
-from netCDF4 import Dataset
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import numpy as np
-import scipy as sp
+from netCDF4 import Dataset  # noqa
+import matplotlib as mpl  # noqa
+import matplotlib.pyplot as plt  # noqa
+import numpy as np  # noqa
+import scipy as sp  # noqa
 
 # Um Details über die verschiedenen Module zu erhalten, kann die interne
 # help-Funktion von Python genutzt werden.  Mit Hilf von help(modul)
