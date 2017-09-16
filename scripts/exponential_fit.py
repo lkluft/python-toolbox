@@ -22,6 +22,7 @@ y = 10 + np.exp(x) + 5 * np.random.normal(size=np.size(x))
 def func(x, a, b, c):
     return a + b * np.exp(c * x)
 
+
 # Exponentielles-Fitten: Der Funktion curve_fit werden die anzufittende
 # Funktion, die x-Werte und die y-Werte mitgegeben.
 popt, pcov = curve_fit(func, x, y)

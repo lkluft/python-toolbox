@@ -7,7 +7,7 @@ eingelesen.  Die verwendeten Funktionen lassen sich bei Bedarf auf
 andere Dateien anpassen.  Für weitere Informationen sei auf die
 Dokumentation von np.genfromtxt() [0] verwiesen.
 
-[0] http://docs.scipy.org/doc/numpy-1.10.0/reference/generated/numpy.genfromtxt.html
+[0] http://docs.scipy.org/doc/numpy/reference/generated/numpy.genfromtxt.html
 
 """
 
