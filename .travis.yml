@@ -1,9 +1,9 @@
 language: python
 python:
-  - 3.4
   - 3.5
   - 3.6
 install:
 script:
-  - pip install flake8
+  - pip install flake8 pep8
   - flake8 scripts
+  - pep8 scripts
