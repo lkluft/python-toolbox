@@ -2,7 +2,7 @@ name: python-toolbox
 dependencies:
 - python>=3.5.1
 - ipython
-- matplotlib>=1.4
+- matplotlib>=2.0
 - netcdf4>=1.2.2
 - numpy>=1.6
 - scipy>=0.15.1
