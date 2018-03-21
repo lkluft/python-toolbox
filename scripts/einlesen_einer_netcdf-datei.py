@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """Einlesen einer netCDF-Datei.
 
-Das netCDF-Dateiformat ist in den Klimawissenschaften sehr stark
-verbreitet.  Mit Hilfe des netCDF4-Moduls lassen sich Daten in diesem
-Format bequem einlesen und weiterverarbeiten.  """
-
+Das netCDF-Dateiformat ist in den Klimawissenschaften weit verbreitet.
+Mit Hilfe des Pythonmoduls `netCDF4` lassen sich netCDF-Daten bequem
+einlesen und weiterverarbeiten.
+"""
 from netCDF4 import Dataset
 import matplotlib.pyplot as plt
 
@@ -12,18 +12,19 @@ import matplotlib.pyplot as plt
 # Öffnen der netCDF-Datei als Dataset-Objekt.
 nc = Dataset('data/test_data.nc')
 
-# Die gespeicherten Daten lassen sich über das Dictionary nc.variables
-# ansprechen.  Mit Hilfe der Keys lässt sich eine Übersicht über die
-# vorhandenen Daten gewinnen.
+# Die gespeicherten Daten lassen sich über das dict-like `nc.variables`
+# ansprechen.  Das Attribut `keys` gibt eine Übersicht über die
+# vorhandenen Daten.
 print(nc.variables.keys())
 
-# Speichern der Daten als Variablen.
-# (Erst an dieser Stelle werden die Daten wirklich gelesen!)
-lon = nc.variables['lon']
-lat = nc.variables['lat']
-temp = nc.variables['temp']
+# Auslesen der Daten in eine Variablen.
+# (Erst durch die Indizierung hier werden die Daten wirklich gelesen!)
+lon = nc.variables['lon'][:]
+lat = nc.variables['lat'][:]
+temp = nc.variables['temp'][:]
 
 # Plot der eingelesenen Daten.
 fig, ax = plt.subplots()
-ax.pcolormesh(lon, lat, temp)
+sm = ax.pcolormesh(lon, lat, temp, cmap='inferno')
+fig.colorbar(sm, label='Temperatur [K]')
 plt.show()
